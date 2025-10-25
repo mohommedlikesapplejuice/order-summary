@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+body{
+    font-family: 'Red Hat Display', Sans-serif;
+    background-image: url('images/pattern-background-mobile.svg');
+    background-repeat: no-repeat;
+     background-size: cover;                  /* Makes it cover the full screen */
+  background-repeat: no-repeat;            /* Prevents repetition */
+  background-position: center;             /* Centers the image */
+  background-color: hsl(225, 100%, 94%);
+}
+
+
+.card{
+    width: 335px;
+    margin: 0 auto;
+    background-color: #fff;
+    margin-top: 70px;
+    border-radius: 20px;
+    height: 570px;
+}
+
+.illu{
+    width: 100%;
+    height: 160px;
+    border-radius: 20px 20px 0px 0px;
+}
+.card h2{
+    padding-top: 34px;
+    padding-bottom: 18px;
+    font-size: 20pt;
+    font-weight: 900;
+    letter-spacing: 15%;
+    line-height: 150%;
+    color: hsl(223, 47%, 23%);
+    text-align: center;
+}
+
+.explain{
+    font-weight: 600;
+    color: hsl(224, 23%, 55%);
+    text-align: center;
+}
+
+
+.rect-shade{
+    width: 264px;
+    height: 75px;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 10px;
+    margin: 30px auto;
+}
+
+ .music, .plan, .shade{
+    display: inline-block;
+    vertical-align: middle;
+    padding-top: 1em;
+    margin-left: 1em;
+}
+
+.plan{
+    color:  hsl(224, 23%, 55%);
+}
+
+
+.bol{
+    font-weight: 700;
+    color: hsl(223, 47%, 23%);
+}
+
+.rect-shade a {
+    font-weight: 700;
+}
+
+
+
+
+.cta-button button{
+    display: block;
+    width: 280px;
+    height: 50px;
+    border-radius: 16px;
+    border: none;
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+     margin: 0 auto;
+     line-height: 150%;
+     letter-spacing:1px;
+    box-shadow: 0px 15px 30px hsla(245, 75%, 52%,0.5);
+}
+
+.cta-button a{
+    display: block;
+    color: hsl(224, 23%, 55%);
+    text-decoration: none;
+    text-align: center;
+    font-weight: 700;
+    margin-top: 25px;
+}
+
+
+button:hover{
+    background-color: hsla(245, 75%, 52%,0.5);
+}
+
+.cta-button a:active{
+    color: hsl(223, 47%, 23%);
+}
+.cta-button a:hover{
+    color: hsl(223, 47%, 23%);
+}
+
+.rect-shade .shade:hover{
+    text-decoration: none;
+}
+
+@media (min-width:760px) {
+    body{
+        background-image: url('images/pattern-background-desktop.svg');
+    }
+
+    .card{
+        width: 468px;
+        height: 700px;
+    }
+
+    .card h2{
+        font-size: 24pt;
+    }
+
+    .illu{
+        height: 220px;
+    }
+
+    .explain{
+        width: 305px;
+        margin: 0 auto;
+    }
+
+.rect-shade{
+    width: 350px;
+}
+
+ .music, .plan, .shade{
+
+    padding-top: 1em;
+    margin-left: 2em;
+}
+
+ .explain  br{
+        display: none;
+    }
+
+    .cta-button button{
+        width: 350px;
+        height: 50px;
+    }
+}
